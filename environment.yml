@@ -2,7 +2,7 @@ name: PLACEHOLDER
 channels:
   - conda-forge
 dependencies:
-  - python>=3.10
+  - python=3.13
   - pip
   # Runtime dependencies, keep in sync with pyproject.toml
   - numpy
