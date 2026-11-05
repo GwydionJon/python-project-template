@@ -1,0 +1,18 @@
+name: PLACEHOLDER
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - pip
+  # Runtime dependencies, keep in sync with pyproject.toml
+  - numpy
+  - pandas
+  - matplotlib
+  # Development tools
+  - pytest
+  - pytest-cov
+  - black
+  - ruff
+  - pre-commit
+  - pip:
+      - -e .[tests,docs]
