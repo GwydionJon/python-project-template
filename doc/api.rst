@@ -5,5 +5,5 @@ User API
 
 This is an example function:
 
-.. automodule:: your_project
+.. automodule:: PLACEHOLDER
     :members:
