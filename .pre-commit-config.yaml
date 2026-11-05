@@ -5,8 +5,12 @@ repos:
       # Run the linter
       - id: ruff-check
         args: [ --fix, --show-fixes ]
-      # Run the formatter
-      - id: ruff-format
+
+  # Run the formatter
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 26.5.1
+    hooks:
+      - id: black
 
   # Add some general purpose useful hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks

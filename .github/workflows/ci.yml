@@ -26,9 +26,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v7
-      with:
-        # setuptools_scm requires a non-shallow clone of the repository
-        fetch-depth: 0
 
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v7
