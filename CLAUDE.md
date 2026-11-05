@@ -14,6 +14,7 @@ conda env create -f environment.yml   # then: conda activate <env>
 pip install -e .[tests,docs]
 pre-commit install                    # once per clone
 pytest                                # hardware tests skipped by default
+pytest --cov=PLACEHOLDER --cov-report=term-missing   # local coverage report
 pre-commit run --all-files
 ```
 
@@ -142,6 +143,7 @@ while (frame := self._read_next()) is not None:
   - Merge related checks into one test (several asserts, parametrization) where the failure message stays clear.
   - Before adding a test, check whether an existing one can be extended.
   - Review the suite regularly and merge overlapping tests.
+- **Keep coverage high**, checked locally with `pytest-cov` (see 1.1). Few tests, but they should exercise most of the code. No external coverage services.
 - [USER INPUT: hardware only, see 2.6] Shared contract tests run against every driver implementation, via `parametrize`.
 - [USER INPUT: hardware only, see 2.6] Hardware tests carry the `hardware` marker and are **skipped by default**. Never run them without authorization (see 2.6).
 - [USER INPUT: hardware only, see 2.6] Tests must not depend on Andor DLLs. Use the virtual devices.

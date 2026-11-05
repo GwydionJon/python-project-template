@@ -8,4 +8,3 @@
 - Give the conda environment the package name (or a similar one): `environment.yml` (2026-11-05)
 - Ask whether the project uses hardware; keep or remove the `[USER INPUT]` rules: `CLAUDE.md` 2.6 and section 4 (2026-11-05)
 - Remind and guide the user to install the pre-commit hooks (`pre-commit install`): `.pre-commit-config.yaml` (2026-11-05)
-- Fill in the Codecov badge URL (currently `None/None`) once the GitHub repo exists: `README.md` (2026-11-05)

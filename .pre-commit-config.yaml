@@ -26,9 +26,3 @@ repos:
       - id: check-toml
       # Unify file endings
       - id: end-of-file-fixer
-
-  # GitHub Actions Workflow linter
-  - repo: https://github.com/rhysd/actionlint
-    rev: v1.7.12
-    hooks:
-      - id: actionlint
